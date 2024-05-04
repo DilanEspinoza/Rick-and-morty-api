@@ -5,70 +5,172 @@
 }
 
 body {
-  background-color: #000000;
-  color: white;
+  background-color: #202324;
 }
 
-.title {
-  text-shadow: 5px 2px 5px #080808;
-  text-align: center;
-  margin: 30px;
+header {
+  height: 65vh;
+  background-color: white;
 }
 
-.contenedor__buscador__peliculas {
+nav {
+  width: 100%;
+  height: 70px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.logo::first-letter {
+  color: #59c9e7;
+}
+
+.logo,
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: flex;
   gap: 20px;
-  width: 80%;
+  list-style: none;
+}
+
+.menu li a {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu li a:hover {
+  background-color: #ccc;
+}
+
+.content__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.content__header h1 {
+  color: #202324;
+  font-size: 6rem;
+  color: #59c9e7;
+  z-index: 1;
+  position: absolute;
+}
+
+.container__background__header {
+  width: auto;
+  height: 100px;
   margin: 0 auto;
-  margin-top: 30px;
-}
-
-#buscador {
-  padding: 15px;
-  width: 50%;
-  background-color: #080808;
-  border: none;
-  color: white;
-  box-shadow: -5px -5px 2px white;
-  transition: 0.5s;
-}
-
-#buscador:hover {
-  box-shadow: 5px 5px 2px rgba(0, 114, 239, 0.5);
-}
-
-button {
-  width: 30%;
-  cursor: pointer;
-  border: none;
-  background-color: rgba(0, 114, 239, 0.14);
-  color: white;
-}
-
-button:hover {
-  transition: 0.6s;
-  background-color: rgba(0, 114, 239, 0.5);
-}
-
-main {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
+}
+
+.bg__header {
+  position: absolute;
+  bottom: 10;
+}
+
+/* nose que poner aqui pero este comentario es par no confundirm */
+
+main {
+  height: 100%;
+}
+
+.container__search__characters {
   width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+input {
+  width: 50%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+}
+
+.container__characters {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 50px auto;
+  gap: 20px;
 }
 
-figure img {
-  width: 200px;
-  height: 250px;
-  object-fit: cover;
-  /* border-radius: 20px; */
+.container_character {
+  width: 40%;
+  height: auto;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 5px;
+  color: white;
+  white-space: wrap;
+}
+
+.character {
+  display: flex; /* Aplicando flexbox */
+  gap: 2.4rem;
+}
+
+.container_character img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.character__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.character__status {
+  color: #4de455;
+}
+
+.character__info {
+  color: #59c9e7;
+}
+
+.container__btns {
+  width: 80%;
+  padding: 20px;
+  margin: 30px auto;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container__btns button {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
+  background-color: #59c9e7;
 }
 
-.año__estreno {
-  color: #999999;
+.container__btns button:hover {
+  background-color: #fff;
+  transition: 0.4s ease-in;
 }
