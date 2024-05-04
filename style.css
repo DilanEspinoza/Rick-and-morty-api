@@ -55,6 +55,14 @@ nav {
   background-color: #ccc;
 }
 
+.btn__bars {
+  background: none;
+  border: none;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+
 .content__header {
   display: flex;
   flex-direction: column;
@@ -173,4 +181,42 @@ input {
 .container__btns button:hover {
   background-color: #fff;
   transition: 0.4s ease-in;
+}
+
+@media (max-width: 800px) {
+  .container__characters {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container_character {
+    width: auto;
+  }
+
+  .content__header h1 {
+    font-size: 2rem;
+  }
+  nav {
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+  .menu__active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.733);
+    backdrop-filter: invert(1%);
+    height: 150px;
+    padding: 20px;
+    position: fixed;
+    top: 70px;
+    right: 30px;
+  }
+  .btn__bars {
+    display: block;
+  }
 }

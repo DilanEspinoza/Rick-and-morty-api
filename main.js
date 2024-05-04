@@ -1,7 +1,8 @@
 import { getCharacters } from "./js/api.js";
 import { buildCharacters } from "./js/built.js";
-// import { nextPage, backPage } from "./js/page.js";
+import { menu } from "./js/menu.js";
 
+menu();
 let $seeMore = document.querySelector(".see__more");
 
 async function cargarPersonajes() {
