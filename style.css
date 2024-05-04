@@ -91,7 +91,7 @@ nav {
 
 .bg__header {
   position: absolute;
-  bottom: 10;
+  bottom: 0;
 }
 
 /* nose que poner aqui pero este comentario es par no confundirm */
@@ -183,7 +183,7 @@ input {
   transition: 0.4s ease-in;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .container__characters {
     display: flex;
     flex-direction: column;
@@ -216,7 +216,32 @@ input {
     top: 70px;
     right: 30px;
   }
+
   .btn__bars {
     display: block;
+  }
+
+  .container__characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .container_character {
+    width: 100%;
+    height: auto;
+  }
+
+  .character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+  }
+
+  .container_character img {
+    width: 250px;
+    object-fit: cover;
   }
 }

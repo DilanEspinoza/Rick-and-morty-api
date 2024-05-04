@@ -15,6 +15,7 @@ async function cargarPersonajes() {
 }
 
 cargarPersonajes();
+
 let count = 2;
 $seeMore.addEventListener("click", async function () {
   const nextCharacters = await getCharacters(count++);
