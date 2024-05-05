@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #202324;
@@ -45,14 +48,28 @@ nav {
   list-style: none;
 }
 
+.menu li {
+  display: flex;
+  align-items: center;
+}
+
 .menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
 
 .menu li a:hover {
   background-color: #ccc;
+}
+
+svg {
+  height: 20px; /* Tamaño deseado para el ícono */
+  width: 20px; /* Tamaño deseado para el ícono */
+  margin: 5px;
 }
 
 .btn__bars {
@@ -94,25 +111,46 @@ nav {
   bottom: 0;
 }
 
-/* nose que poner aqui pero este comentario es par no confundirm */
-
 main {
   height: 100%;
 }
 
-.container__search__characters {
+.btn__arrow-up a {
+  position: fixed;
+  background-color: #666;
+  padding: 10px;
+  border: none;
+  background: #59c9e7;
+  cursor: pointer;
+  right: 10px;
+  bottom: 50px;
+  color: white;
+}
+
+#container__search__characters {
   width: 80%;
   display: flex;
   justify-content: center;
+  gap: 20px;
   margin: 30px auto;
 }
 
 input {
   width: 50%;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   border: 0;
   outline: none;
+}
+
+.btn__search {
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.btn__search:hover {
+  background-color: #59c9e7;
 }
 
 .container__characters {
@@ -135,7 +173,7 @@ input {
 }
 
 .character {
-  display: flex; /* Aplicando flexbox */
+  display: flex;
   gap: 2.4rem;
 }
 
@@ -153,8 +191,11 @@ input {
   gap: 10px;
 }
 
-.character__status {
+.character__status__Alive {
   color: #4de455;
+}
+.character__status__Dead {
+  color: #e4574d;
 }
 
 .character__info {
@@ -200,8 +241,15 @@ input {
     justify-content: space-between;
   }
 
+  .btn__bars {
+    transition: 0.4s;
+  }
+
   .menu {
+    transition: all 0.5s ease-in;
     display: none;
+    top: 0;
+    right: 0;
   }
   .menu__active {
     display: flex;
@@ -209,16 +257,19 @@ input {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.733);
-    backdrop-filter: invert(1%);
-    height: 150px;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 100vh;
     padding: 20px;
     position: fixed;
-    top: 70px;
-    right: 30px;
+  }
+  .menu li a:hover {
+    background: none;
   }
 
   .btn__bars {
     display: block;
+    z-index: 1;
   }
 
   .container__characters {

@@ -1,11 +1,11 @@
-import { getCharacters } from "./js/api.js";
-import { buildCharacters } from "./js/built.js";
-import { menu } from "./js/menu.js";
+import { getCharacters } from "./api.js";
+import { buildCharacters } from "./built.js";
+import { menu } from "./menu.js";
 
 menu();
 let $seeMore = document.querySelector(".see__more");
 
-async function cargarPersonajes() {
+async function loadCharacters() {
   try {
     const characters = await getCharacters();
     buildCharacters(characters);
@@ -14,7 +14,7 @@ async function cargarPersonajes() {
   }
 }
 
-cargarPersonajes();
+loadCharacters();
 
 let count = 2;
 $seeMore.addEventListener("click", async function () {
