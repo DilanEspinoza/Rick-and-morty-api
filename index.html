@@ -3,7 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rick and Morty</title>
+    <meta
+      name="description"
+      content="Sitio web que consume la api de Rick and Morty, donde puedes buscar los personajes de esta serie"
+    />
+    <meta
+      name="keywords"
+      content="Rick and Morty, Rick and morty, rick, Rick, Morty, morty, api, programacion, code, javascript, html5, css3, Api Rick and Morty"
+    />
+    <meta
+      name="twitter:domain"
+      content="https://api-characters-rick-and-morty.netlify.app/"
+    />
+    <meta name="title" content="Rick and Morty" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Dilan Espinoza" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Rick and Morty" />
+    <meta
+      property="og:description"
+      content="Sitio web que consume la api de Rick and Morty, donde puedes buscar los personajes de esta serie"
+    />
+
+    <title>Rick and Morty - Dilan Espinoza</title>
     <link
       rel="icon"
       type="image/png"
@@ -47,12 +69,13 @@
   <body id="top">
     <header>
       <nav>
-        <a href="#" class="logo">Dilan Espinoza</a>
+        <a href="#" class="logo" title="Author">Dilan Espinoza</a>
         <ul class="menu">
           <li>
             <a
               href="https://github.com/DilanEspinoza/Rick-and-morty-api"
               target="_blank"
+              title="Link Github"
             >
               <span class="icon__github icon">
                 <svg
@@ -71,7 +94,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="Link Linkedin">
               <span class="icon__linkedin icon">
                 <svg
                   width="30"
@@ -88,7 +111,11 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/dilan_dev/" target="_blank">
+            <a
+              href="https://www.instagram.com/dilan_dev/"
+              target="_blank"
+              title="Link Instagram"
+            >
               <span class="icon__instagram icon">
                 <svg
                   width="30"
@@ -134,7 +161,7 @@
       </div>
     </header>
     <main class="container">
-      <button class="btn__arrow-up">
+      <button class="btn__arrow-up" title="Up">
         <a href="#top">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
             <path
@@ -149,7 +176,7 @@
           type="text"
           placeholder="Search for a character..."
         />
-        <button class="btn__search" type="submit">
+        <button class="btn__search" type="submit" title="Search characters">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path
               d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"

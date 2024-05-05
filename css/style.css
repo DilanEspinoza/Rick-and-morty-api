@@ -115,6 +115,11 @@ main {
   height: 100%;
 }
 
+.btn__arrow-up {
+  background: none;
+  border: none;
+}
+
 .btn__arrow-up a {
   position: fixed;
   background-color: #666;
