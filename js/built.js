@@ -2,10 +2,10 @@ let $containerCharacters = document.querySelector(".container__characters");
 export default $containerCharacters;
 
 export function buildCharacters(characters) {
-  characters.forEach((character) => {
-    let containerCharacter = document.createElement("article");
-    containerCharacter.classList.add("container_character");
-    containerCharacter.innerHTML = `
+	characters.forEach((character) => {
+		let containerCharacter = document.createElement("article");
+		containerCharacter.classList.add("container_character");
+		containerCharacter.innerHTML = `
       <div class="character">
           <img src="${character.image}" alt="" />
           <div class="character__description">
@@ -26,13 +26,13 @@ export function buildCharacters(characters) {
           </div>
     </div>
 `;
-    $containerCharacters.appendChild(containerCharacter);
-  });
+		$containerCharacters.appendChild(containerCharacter);
+	});
 }
 
 export function buildErrorCharacters(messageError = "Not found") {
-  let containerCharacter = document.createElement("article");
-  containerCharacter.classList.add("container_character");
-  containerCharacter.innerHTML = messageError;
-  return $containerCharacters.appendChild(containerCharacter);
+	let containerCharacter = document.createElement("article");
+	containerCharacter.classList.add("container_character");
+	containerCharacter.innerHTML = messageError;
+	return $containerCharacters.appendChild(containerCharacter);
 }
