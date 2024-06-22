@@ -5,11 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="google-site-verification" content="R-PKsBGp2JKcbk8FISNLAQ7jIcTeajb47rm1kwq01cI" />
 		<meta
-			name="description"
-			content="Sitio web que consume la api de Rick and Morty, donde puedes buscar los personajes de esta serie" />
-		<meta
-			name="keywords"
-			content="Rick and Morty, Rick and morty, rick, Rick, Morty, morty, api, programacion, code, javascript, html5, css3, Api Rick and Morty" />
+    name="description"
+    content="Explora y busca tus personajes favoritos de Rick and Morty en nuestro sitio web. Utilizamos la API de Rick and Morty para ofrecerte información detallada y actualizada sobre todos los personajes de la serie." />
+
+	<meta
+    name="keywords"
+    content="Rick and Morty, personajes de Rick and Morty, API de Rick and Morty, programación, JavaScript, HTML5, CSS3, desarrollo web, buscar personajes Rick and Morty" />
+
 		<meta
 			name="twitter:domain"
 			content="https://api-characters-rick-and-morty.netlify.app/" />
@@ -20,10 +22,11 @@
 		<meta property="og:title" content="Rick and Morty" />
 		<meta
 			property="og:description"
-			content="Sitio web que consume la api de Rick and Morty, donde puedes buscar los personajes de esta serie" />
+			content="Explora y busca tus personajes favoritos de Rick and Morty en nuestro sitio web. Utilizamos la API de Rick and Morty para ofrecerte información detallada y actualizada sobre todos los personajes de la serie." />
 
 		<title>Rick and Morty - Dilan Espinoza</title
-		<!-- Preconnect to Riack and Morty and Font Awesome-->
+
+		<!-- Preconnect to Riack and Morty and Font Awesome -->
 		<link rel="preconnect" href="https://rickandmortyapi.com" />
 		<link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
 		<link
@@ -79,8 +82,8 @@
 							title="Link Github">
 							<span class="icon__github icon">
 								<svg
-									width="30"
-									height="30"
+									width="25"
+									height="25"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 496 512">
 									<path
@@ -95,8 +98,8 @@
 						<a href="#" title="Link Linkedin">
 							<span class="icon__linkedin icon">
 								<svg
-									width="30"
-									height="30"
+									width="25"
+									height="25"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 448 512">
 									<path
@@ -113,8 +116,8 @@
 							title="Link Instagram">
 							<span class="icon__instagram icon">
 								<svg
-									width="30"
-									height="30"
+									width="25"
+									height="25"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 448 512">
 									<path
@@ -127,7 +130,7 @@
 					</li>
 				</ul>
 				<button class="btn__bars">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+					<svg width="30" height="25"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
 						<path
 							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
 					</svg>
@@ -150,12 +153,11 @@
 			</div>
 		</header>
 		<main class="container">
-			<button class="btn__arrow-up" title="Up">
-				<a href="#top">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-						<path
-							d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-					</svg>
+				<a class="btn__arrow-up" title="Up" href="#top">
+					<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path fill="#ffffff" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+					  </svg>
+					  
 				</a>
 			</button>
 			<form id="container__search__characters">
@@ -164,7 +166,7 @@
 					type="text"
 					placeholder="Search for a character..." />
 				<button class="btn__search" type="submit" title="Search characters">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 						<path
 							d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
 					</svg>
