@@ -7,7 +7,7 @@ export function buildCharacters(characters) {
 		containerCharacter.classList.add("container_character");
 		containerCharacter.innerHTML = `
       <div class="character">
-          <img src="${character.image}" alt="" />
+          <img src="${character.image}" alt="${character.name}" />
           <div class="character__description">
           <h2 class="character__name">${character.name}</h2>
           <p class="character__status__${character.status}">
